@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>MT Furniture</title>
+        <link href="Furniture.css" rel="stylesheet" type="text/css" />
+        <script>
+
+            function imageView(bigImage) {
+                document.querySelector('#imageShow').setAttribute('src', bigImage);
+                document.querySelector('#popup').style.display = 'block';
+                document.querySelector('#imagebg').style.visibility = 'visible';
+                
+            }
+    
+            function imageClose() {
+                document.querySelector('#popup').style.display = 'none';
+                document.querySelector('#imagebg').style.visibility = 'hidden';
+            }
+    
+        </script>
+    </head>
+    <body>
+        <div class="nav">
+            <div id="logo"><img src="pic/logo.png" alt="Mintae Furniture" style="width:500px;height:150px;"/></div>
+            <nav class="align">
+                <ul>
+                    <li class="nav-item menu"><a href="storefront.html">Feature</a>
+                        <ul>
+                            <li class="menu"><a href="storefront.html" >About us</a></li>
+                            <li class="menu"><a href="storefront.html" >Product</a></li>
+                            <li class="menu"><a href="storefront.html" >information</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item menu"><a href="storefront.html" >Enterprise</a></li>
+                    <li class="nav-item menu"><a href="storefront.html" >Support</a>
+                        <ul>
+                            <li><a href="storefront.html">Contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item menu"><a href="storefront.html" >Pricing</a>
+                        <ul>
+                            <li class="menu"><a href="storefront.html" >Promotion</a></li>
+                            <li class="menu"><a href="storefront.html" >Event</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </nav>
+           
+            <div class="nav-login">
+                <div id="login" style="background-color: white;">
+                   <form>
+                       <input type="email" placeholder="E-mail" />
+                       <input type="password" placeholder="password" />
+                       <button class="sign" type="submit">Login</button>
+                       <button class="sign" type="submit">sign up</button>
+                   </form>
+                </div>
+            </div>    
+        </div>
+        <div class="mainbody">
+            <aside>
+                <h1>Category</h1>
+                <ul>
+                    <li><a href="storefront.html" style="text-align:left;">Interior</a></li>
+                    <li><a href="storefront.html" style="text-align:left;">Wallpaper</a></li>
+                    <li><a href="storefront.html" style="text-align:left;">Small Furniture</a></li>
+                    <li><a href="storefront.html" style="text-align:left;">Company Furniture</a></li>
+                    <li><a href="storefront.html" style="text-align:left;">Tile</a></li>
+                </ul>
+            </aside>
+            <main>
+                    <div class="title">
+                            Interior Furniture
+                        </div>
+                        <div class="subTitle">
+                        </div>
+            
+                        <div class="prices">
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60"
+                                        alt="Seneca College" height="385" width="300"  onclick='imageView("https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");'>
+                                        <div class="price-item-title">
+                                                Black Floor Lamp
+                                            </div>
+                                        <div>CAD $250</div>
+                                        Qty<select name="qty">
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                        </select>
+                                    </div>
+                                    <div class="button">
+                                        <button class="price-item-button">Buy</button>
+                                        <button class="price-item-button">Wishlist</button>
+                                    </div>  
+                                </div>
+                                <div class="priceItem">          
+                                        <div class="price-item-price">
+                                            <img src="https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1550226891-ef816aed4a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                            <div class="price-item-title">
+                                                    Yellow Armchair
+                                                </div>
+                                            <div>CAD $70</div>
+                                            Qty<select name="qty">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                                <option value="five">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="button">
+                                            <button class="price-item-button">Buy</button>
+                                            <button class="price-item-button">Wishlist</button>
+                                        </div>  
+                                    </div>
+                                    <div class="priceItem">          
+                                            <div class="price-item-price">
+                                                <img src="https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                                alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1537212013010-de9c76f8f0ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                                <div class="price-item-title">
+                                                    Gray Padded Couch
+                                                    </div>
+                                                <div>CAD $80</div>
+                                                Qty<select name="qty">
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
+                                                    <option value="four">4</option>
+                                                    <option value="five">5</option>
+                                                </select>
+                                            </div>
+                                            <div class="button">
+                                                <button class="price-item-button">Buy</button>
+                                                <button class="price-item-button">Wishlist</button>
+                                            </div>  
+                                        </div>
+                            </div>
+                            <br><br><br>
+                            <div class="prices">
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1507473885765-e6ed057f782c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                            <div class="price-item-title">
+                                                Gray Desk Lamp 
+                                            </div>
+                                            <div>CAD $50</div>
+                                            Qty<select name="qty">
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                            </select>
+                                            </div>
+                                            <div class="button">
+                                                <button class="price-item-button">Buy</button>
+                                                <button class="price-item-button">Wishlist</button>
+                                            </div>  
+                                        </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1506898667547-42e22a46e125?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                            <div class="price-item-title">
+                                                Grey Padded Chair
+                                            </div>
+                                            <div>CAD $85</div>
+                                            Qty<select name="qty">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                                <option value="five">5</option>
+                                            </select>
+                                            </div>
+                                                <div class="button">
+                                                    <button class="price-item-button">Buy</button>
+                                                    <button class="price-item-button">Wishlist</button>
+                                                </div>  
+                                            </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1551298698-66b830a4f11c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1551298698-66b830a4f11c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                            <div class="price-item-title">
+                                                Gray Sofa Chair
+                                                </div>
+                                                <div>CAD $180</div>
+                                                Qty<select name="qty">
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
+                                                    <option value="four">4</option>
+                                                    <option value="five">5</option>
+                                                    </select>
+                                                    </div>
+                                            <div class="button">
+                                            <button class="price-item-button">Buy</button>
+                                            <button class="price-item-button">Wishlist</button>
+                                        </div>  
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="prices">
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1559740643-4cc69c57c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1559740643-4cc69c57c817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");'>
+                                            <div class="price-item-title">
+                                                Brown Wooden Rocking Armchairs
+                                            </div>
+                                            <div>CAD $90</div>
+                                            Qty<select name="qty">
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                            </select>
+                                            </div>
+                                            <div class="button">
+                                                <button class="price-item-button">Buy</button>
+                                                <button class="price-item-button">Wishlist</button>
+                                            </div>  
+                                        </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1530603907829-659ab5ec057b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1530603907829-659ab5ec057b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");'>
+                                            <div class="price-item-title">
+                                                    Pendant Lamp
+                                            </div>
+                                            <div>CAD $55</div>
+                                            Qty<select name="qty">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                                <option value="five">5</option>
+                                            </select>
+                                            </div>
+                                                <div class="button">
+                                                    <button class="price-item-button">Buy</button>
+                                                    <button class="price-item-button">Wishlist</button>
+                                                </div>  
+                                            </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1510877073473-6d4545e9c2af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1510877073473-6d4545e9c2af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");'>
+                                            <div class="price-item-title">
+                                                Round Brown Table
+                                                </div>
+                                                <div>CAD $45</div>
+                                                Qty<select name="qty">
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
+                                                    <option value="four">4</option>
+                                                    <option value="five">5</option>
+                                                    </select>
+                                                    </div>
+                                            <div class="button">
+                                            <button class="price-item-button">Buy</button>
+                                            <button class="price-item-button">Wishlist</button>
+                                        </div>  
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div class="prices">
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1542546068979-b6affb46ea8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");'>
+                                            <div class="price-item-title">
+                                                White Laptop Desk
+                                            </div>
+                                            <div>Not Available</div>
+                                            Qty<select name="qty">
+                                                    <option value="one">0</option>
+                                            </select>
+                                            </div>
+                                            <div class="button">
+                                                <button class="price-item-button">Buy</button>
+                                                <button class="price-item-button">Wishlist</button>
+                                            </div>  
+                                        </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1552253678-e8b5514c43cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1552253678-e8b5514c43cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");'>
+                                            <div class="price-item-title">
+                                                    White Hanging Chair
+                                            </div>
+                                            <div>CAD $55</div>
+                                            Qty<select name="qty">
+                                                <option value="one">1</option>
+                                                <option value="two">2</option>
+                                                <option value="three">3</option>
+                                                <option value="four">4</option>
+                                                <option value="five">5</option>
+                                            </select>
+                                            </div>
+                                                <div class="button">
+                                                    <button class="price-item-button">Buy</button>
+                                                    <button class="price-item-button">Wishlist</button>
+                                                </div>  
+                                            </div>
+                                <div class="priceItem">          
+                                    <div class="price-item-price">
+                                        <img src="https://images.unsplash.com/photo-1526887593587-a307ea5d46b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                            alt="Seneca College" height="385" width="300" onclick='imageView("https://images.unsplash.com/photo-1526887593587-a307ea5d46b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");'>
+                                            <div class="price-item-title">
+                                                Laptop Dest
+                                                </div>
+                                                <div>CAD $145</div>
+                                                Qty<select name="qty">
+                                                    <option value="one">1</option>
+                                                    <option value="two">2</option>
+                                                    <option value="three">3</option>
+                                                    <option value="four">4</option>
+                                                    <option value="five">5</option>
+                                                    </select>
+                                                    </div>
+                                            <div class="button">
+                                            <button class="price-item-button">Buy</button>
+                                            <button class="price-item-button">Wishlist</button>
+                                        </div>  
+                                </div>
+                            </div>
+                            <br><br><br>
+                        </main>
+        </div>
+        <div id=popup>
+            <!-- large version of the image -->
+            <img id=imageShow src='p1.jpg' alt='Loading...' class=image>
+            <div class=close onclick='imageClose();'>&nbsp;X&nbsp;</div>
+        </div>
+        <div id=imagebg></div>   
+            
+        <footer>Copyright© 2019 Image by <a href="https://unsplash.com/" style="color:blue;">Unsplash.com </a></footer>
+    </body>
+</html>

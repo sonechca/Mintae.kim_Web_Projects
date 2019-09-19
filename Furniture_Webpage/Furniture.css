@@ -1,0 +1,223 @@
+
+.nav {
+
+    height: 150px;
+    border-bottom: 1px solid black;
+    display:flex;
+    align-items: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+}
+nav a:link, nav a:visited {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+nav ul li ul {
+    padding: 8px 12px;
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+nav ul li ul li {
+    display: block;
+    text-align: left;
+    width: 150px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+nav ul li:hover ul {
+    display: block;
+    padding: 0;
+    width: 150px;
+    opacity: 1;
+    visibility: visible;
+}
+nav a:hover {
+    color:  #4879CB;
+}
+li a {
+    color: black;
+    font-size: 20px;
+}
+.nav-login{
+    display: flex;
+    margin-left: auto;
+}
+.nav-item{
+    margin-right: 50px;
+    margin-left: 20px;
+}
+/*Main body css*/
+.align {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    font-size: 20px;
+    align-items: flex-end;
+    display: flex;
+}
+
+.title{
+    margin: auto;
+    text-align: left;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.mainbody {
+    max-width: 1000px;
+    margin-top: 130px;
+
+}
+/*Aside css list*/
+aside { 
+    width: 400px;
+    position: absolute;
+
+}
+aside h1 {
+    font-size: 50px;
+}
+aside ul {
+    width: 50%;
+    list-style-type: none;
+}
+aside ul li{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+aside a:link, nav a:visited {
+    display: block;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+aside a:hover{
+    display: block;
+    background-color: #4879CB;
+}
+main { 
+    width: 80%; 
+    margin-left: 400px;
+}
+/*Price and button css*/
+.prices {
+    display: flex;
+    margin-bottom: 40px;
+}
+.priceItem {
+    width: 300px;
+    height: 26rem;
+    margin: 20px;
+    border-radius: 4px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.price-item-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1rem;
+    height: 53px;
+    line-height: 53px;
+}
+
+
+
+.price-item-button {
+    margin-top: 5px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: white; 
+    background-color: transparent;
+    background-image: none;
+    background-color: #007bff;
+
+}
+.sign {
+    background-color: #007bff;
+    color: white;
+}
+.button-color-active {
+    background-color: #007bff;
+}
+/*Footer, inform the copyright css*/
+footer {
+    clear: both;
+    text-align: center;
+}
+img {
+    cursor: pointer;
+}
+/*Pop up image*/
+#popup
+{
+display: none;
+position: fixed; /* absolute? fixed? they have different results... */
+top: 200px;
+left: 550px;
+background-color: white;
+padding: 20px;
+border: 1px solid black;
+cursor: default;
+z-index: 1000;
+margin: 0 auto;
+}
+#popup .image
+{
+    max-width: 1000px;
+    max-height: 600px;
+}
+#popup .close
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1001;
+    font: bold 24px arial, sans-serif;
+    color: white;
+    background-color: #4879CB;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: pointer;
+}
+figure figcaption
+{
+    width: 200px;               
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 0px;
+    display: none;
+    
+}
+figure:hover figcaption
+{ 
+
+    display: block;
+    
+}
+/*Background imgage showing*/ 
+#imagebg
+        {
+            visibility: hidden;
+            background: rgba(0,0,0,0.5);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+        }
