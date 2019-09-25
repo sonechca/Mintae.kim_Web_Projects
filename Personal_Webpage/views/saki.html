@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- Latest compiled and minified Bootstrap 3.3.7 CSS -->
+      <script src="script/saki.js"></script>
+      <link rel="stylesheet" href="css/saki.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <title>About</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand" href="#">Mintae's Story</span>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Link 1</a></li>
+            <li><a href="/about">Link 2</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li class="active"><a href="/saki">Saki Page</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <div class="row">
+        <aside class="col-md-3">
+          <h2>Hi Saki</h2>
+        </aside>
+        <section class="main col-md-9">
+          <article>
+              <div class="a">
+                <header class="heading">Saki Login</header>
+        
+                <form class="login" name="login" action="https://sakipage.herokuapp.com/" onsubmit="return validateLogin();">
+                    <fieldset>
+                        <legend>User Infomation</legend>
+                        <label for="fname">First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="First name" onchange="validateFirstname()">
+                        <span class="errFname" id="errFname"></span><br>
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last name" onchange="validateLastname()">
+                        <span class="errLname" id="errLname"></span><br>
+                        <label for="pword">Password</label>
+                        <input type="password" name="pword" onchange="validatePassword()"/>
+                        <span class="errPword" id="errPword"></span><br>
+                        Gender
+                        <input type="radio" name="gender" id="entity1"/>Male
+                        <input type="radio" name="gender" id="entity2" checked/>Female<br>
+                        <label for="bname">Boy friend name</label>
+                        <input type="text" name="bname" onchange="validateBname()"/>
+                        <span class="errBname" id="errBname"></span>
+                        <p>Select your best Lover</p>
+                        <select name="love" id="entity3" >
+                            <option value="0">Select</option>
+                            <option value="1">Mintae</option>
+                            <option value="2">Ice cream</option>
+                            <option value="3">Oreo</option>
+                        </select>
+            
+                        <p>Check the your answer</p>
+                        <input type="checkbox" name="saki"> I am cute
+                        <input type="checkbox" name="saki"> I am Mintae girlfirend
+                        <input type="checkbox" name="saki"> I am beatiful<br>
+                        <input type="checkbox" name="saki"> I am kind
+                        <input type="checkbox" name="saki"> I really love Mintae
+                        <span class="errCheck" id="errCheck"></span>
+                        
+            
+            
+                        
+                    </fieldset>
+                    <input type="submit" id="submit" value="Submit"/>&nbsp;
+                    <input type="reset" id="reset" value="   Clear   " onclick="clearError()"/>
+                </form>
+              </div>
+                
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified jQuery 3.2.1 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
